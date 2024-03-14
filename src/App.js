@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import MyViewerComponent from './components/Viewer/Viewer';
+// import PSEViewer from './components/PlipViewer/PlipViewer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <div className="split left">
+      <div className="centered">
+        <MyViewerComponent />
+      </div>
+    </div>
+
+    <div className="split right">
+      <div className="centered">
+         {/* <PSEViewer /> */}
+      </div>
+    </div>
     </div>
   );
 }
